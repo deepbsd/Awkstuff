@@ -21,7 +21,7 @@ function div(a, b){
 function usage(){
     print "usage: awk -f math.awk number1 <sign> number2"
     print "usage: <sign> must be one of + - * /"
-    print "You must escape the * sign with \\ "
+    print "You must escape the * sign with \\* "
     print "Examples: awk -f math.awk 8 / 4 ; awk -f math.awk 9 \\* 2, etc"
 }
 
