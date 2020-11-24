@@ -9,6 +9,7 @@ BEGIN {
         }
     }
 
+    printf "There are %d arguments.\n",ARGC
     output = "I see "
     for (name in names) {
         output = output names[name] ", "
