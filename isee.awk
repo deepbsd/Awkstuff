@@ -1,6 +1,7 @@
 # usage awk -f isee.awk name1 name2 name3
 #
-
+# This script just takes a series of names as arguments and says "I see " 
+# with those list of names following
 
 BEGIN {
     if (ARGC >= 1) {
