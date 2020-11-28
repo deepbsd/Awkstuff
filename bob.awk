@@ -22,4 +22,13 @@
 # It's possible to submit an incomplete solution so you can see how others have completed the exercise.
 
 
+BEGIN {
+    gsub(/ /, "", ARGV[1])
+    textin = ARGV[1]
 
+    if ( textin == "" ) { print "Fine.  Be that way!" ; exit 0 }
+    if ( textin == toupper(textin) ) { print "Whoa, chill out!" ; exit 0 }
+    if ( index(ARGV[1], "?" ) == length(textin) )  { print "Sure." ; exit 0 }
+    print "Whatever."
+    exit 0
+}
