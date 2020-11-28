@@ -27,8 +27,7 @@ BEGIN {
     textin = ARGV[1]
 
     if ( textin == "" ) { print "Fine.  Be that way!" ; exit 0 }
-    if ( textin == toupper(textin) ) { print "Whoa, chill out!" ; exit 0 }
-    if ( index(ARGV[1], "?" ) == length(textin) )  { print "Sure." ; exit 0 }
-    print "Whatever."
-    exit 0
+    if ( textin == toupper(textin) && match(textin, /[A-Z]+/) > 0  ) { print "Whoa, chill out!" ; exit 0 }
+    if ( index(textin, "?" ) == length(textin) )  { print "Sure." ; exit 0 }
+    print "Whatever." ; exit 0
 }
